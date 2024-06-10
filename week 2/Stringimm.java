@@ -8,8 +8,8 @@ public class Stringimm {
         System.out.println(str1.hashCode());
         StringBuffer sb = new StringBuffer("Hello Worlds");
         StringBuilder sb2 = new StringBuilder("Hello Worlds");
-        str1 = sb+sb2;
-        StringBuffer sb3 = new StringBuffer(sb+sb2);
+//        str1 = sb+sb2;
+//        StringBuffer sb3 = new StringBuffer(sb+sb2);
 
         System.out.println(str1);
 

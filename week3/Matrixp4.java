@@ -20,7 +20,12 @@ public class Matrixp4 {
         System.out.println();
         }
 System.out.println(Arrays.deepToString(res));
+for(int j = 0; j < matrix1.length; j++){
+    for(int i = 0; i < matrix2[0].length; i++){
 
+        System.out.print(j+""+i+" ");
+    }
+}
             }
 
         }
