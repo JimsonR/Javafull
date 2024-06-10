@@ -1,2 +1,2 @@
-public class Strinimpl {
-}
+//public class Strinimpl {
+//}
