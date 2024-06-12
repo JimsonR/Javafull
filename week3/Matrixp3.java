@@ -9,19 +9,19 @@ public class Matrixp3 {
                         {7, 8, 9}};
         int target = 4;
         int[] arr = new int[matrix.length * matrix[0].length];
-        HashMap<Integer, String> map = new HashMap<>();
+        HashMap<Integer, int[]> map = new HashMap<>();
 
         boolean found = false;
         for (int row = 0; row < 3; row++) {
             for (int col = 0; col < 3; col++) {
                 arr[row * 3 + col] = matrix[row][col];
-                String s = String.valueOf(row);
-                s += " "+String.valueOf(col);
+
+
 //                System.out.println(s);
                 if (map.containsKey(matrix[row][col])) {
 
                 } else {
-                    map.put(matrix[row][col], s);
+                    map.put(matrix[row][col], new int[] {row,col});
 //                    System.out.println(map);
                 }
             }
@@ -35,7 +35,7 @@ public class Matrixp3 {
         }
 //        System.out.println(map);
         if (map.containsKey(target)) {
-            System.out.println(map.get(target));
+            System.out.println(Arrays.toString(map.get(target)));
         }
     }
 }
