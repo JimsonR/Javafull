@@ -1,11 +1,9 @@
 interface Interfaces{
         int i = 10;
-
         void m1();
         void m2();
         void m3();
     int x = 20;
-
 }
 class Abc implements Interfaces {
 //      int i = super.i+1;
@@ -25,10 +23,7 @@ class Abc implements Interfaces {
  protected class ProtectedClass{
  }
 }
-
-
-class Main{
-
+class Main1{
     public static void main(String[] args) {
         Interfaces a = new Abc();
         System.out.println(a.i);

@@ -1,14 +1,14 @@
+import java.util.*;
+
 public class Perms {
 public static void main(String[] args) {
-    for (int i = 1; i < 3; i++) {
-        for (int j = i; j < 3; j++) {
-            for (int k = j; k < 3; k++) {
-                System.out.println(i + " " + j + " " + k+" ");
-            }
+    int[] nums = {1,1,2};
+    List<List<Integer>> permute = new ArrayList<>();
+    List<Integer> temp = new ArrayList<>();
 
-        }
-//        System.out.println();
 
-    }
+for (int i = 0; i < nums.length; i++) {
+
+}
 }
 }
