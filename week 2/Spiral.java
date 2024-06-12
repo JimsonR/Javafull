@@ -18,6 +18,7 @@ public class Spiral {
 //            }
 //            System.out.println();
 //        }
+
         for (int i = 0; i < matrix[0].length; i++) {
             System.out.print(matrix[0][i]+" ");
             result.add(matrix[0][i]);

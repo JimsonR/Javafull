@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 public class Matrixp1 {
+
     public static void main(String[] args) {
         int[][] matrix1 = {
                 {1, 2, 3},
@@ -17,6 +18,7 @@ public class Matrixp1 {
                 res[i][j] = matrix1[i][j]+matrix2[i][j];
 
             }
+
 
         }
         System.out.println(Arrays.deepToString(res));

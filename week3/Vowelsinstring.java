@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 //import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -22,9 +23,15 @@ public class Vowelsinstring {
         }
 //        System.out.println(res[0]);
         HashSet<Character> vowels = new HashSet<>();
+        HashMap<Character, Integer> vowelCount = new HashMap<>();
+        int count1 = 0;
         for(Character c : res){
             vowels.add(c);
+            vowelCount.put(c,count1);
+            System.out.println(vowelCount);
+            count1++;
         }
+        System.out.println(vowelCount);
 
         for(int i=0; i<vowels.size(); i++){
             int count=1;
@@ -38,6 +45,7 @@ public class Vowelsinstring {
             }
             System.out.println(vowels.toArray()[i]+" "+count);
 }
+        System.out.println(vowels);
             }
 
 

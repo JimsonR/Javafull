@@ -15,5 +15,9 @@ public class Strinimpl {
             s += (char)(i+'a');
             System.out.println(s.hashCode());
         }
+//        s = sbfr+sb;
+        String newstr = "sasd"+sbfr+sb;
+//        s = sb;
+
     }
 }
