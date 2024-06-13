@@ -1,17 +1,38 @@
+interface Interfaces1{
+
+}
+interface Interfaces2{
+
+}
 interface Interfaces{
         int i = 10;
-        void m1();
+        String m1();
         void m2();
-        void m3();
+        default void m4(){
+            System.out.println("m4");
+        }
+         static void m5(){
+            System.out.println("m5");
+        }
+        private static void m6(){
+            System.out.println("m6");
+        }
+        private void m7(){
+            System.out.println("m7");
+        }
     int x = 20;
 }
-class Abc implements Interfaces {
+class Abc implements Interfaces, Interfaces1, Interfaces2 {
 //      int i = super.i+1;
-    public void m1(){
+    @Override
+     public String m1(){
         System.out.println(i);
+        return "m1";
     }
-    public void m2(){
+
+     public void m2(){
         System.out.println(i);
+
     }
     public void m3(){
         System.out.println(i);

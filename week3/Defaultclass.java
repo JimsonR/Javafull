@@ -13,7 +13,7 @@ public class Defaultclass {
      void defaultmethod(){
         System.out.println("defaultmethod");
      }
-     public void privatemethod(){
+     private void privatemethod(){
         System.out.println("privatemethod");
      }
 
