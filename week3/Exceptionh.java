@@ -31,7 +31,18 @@ public class Exceptionh {
         }catch (Throwable t){
             System.out.println(t.getMessage());
         }
+        try{
+            throw new IOException("asdasdsa");
+        }
+        catch (IOException r){
 
+        }
+        catch (Exception e){
+
+        }
+        catch (Throwable e){
+
+        }
 
     }
 }

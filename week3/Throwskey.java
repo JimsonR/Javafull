@@ -5,7 +5,7 @@ import java.io.IOException;
 class G{
     void add()throws IOException
     {
-         concat();
+//         concat();
     }
     void concat()throws IOException{
     throw new IOException("My IOException");
@@ -18,10 +18,19 @@ public class Throwskey {
         G g = new G();
         try {
             g.add();
+            ArrayIndexOutOfBoundsException arb= new ArrayIndexOutOfBoundsException("mys");
+            throw arb;
         }
 
         catch (IOException e) {
+            e.printStackTrace();
+            e.getMessage();
 
+
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
+            e.getMessage();
         }
         finally {
             System.out.println("done");
