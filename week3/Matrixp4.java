@@ -20,7 +20,7 @@ public class Matrixp4 {
 
         int[][] matrix2 = {{7, 8, 9},
                           {10, 11, 12}};
-        System.out.println(Arrays.deepToString(recurmul(matrix1[0],matrix2[0])));
+//        System.out.println(Arrays.deepToString(recurmul(matrix1[0],matrix2[0])));
 
         int[][] res = new int[3][3];
         ArrayList<int[]> list1 = new ArrayList<>();
