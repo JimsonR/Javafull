@@ -17,10 +17,16 @@ public class Matrixp1 {
 //                System.out.print(matrix2[i][j] + " ");
                 res[i][j] = matrix1[i][j]+matrix2[i][j];
 
+
             }
 
 
+
+
         }
-        System.out.println(Arrays.deepToString(res));
+//        System.out.println(Arrays.deepToString(res));
+        for (int i = 0; i < res.length; i++) {
+            System.out.println(Arrays.toString(res[i]));
+        }
     }
 }

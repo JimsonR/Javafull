@@ -5,7 +5,7 @@ import java.util.List;
 public class Spiral {
     static ArrayList<Integer> newlistitems(int[][] matrix, int top, int bottom, int left, int right,ArrayList<Integer> result) {
         if (top > bottom || left > right) {
-            return new ArrayList();
+            return result;
         }
         for (int i = left; i <= right; i++) {
             result.add(matrix[top][i]);
@@ -15,13 +15,13 @@ public class Spiral {
             result.add(matrix[i][right]);
         }
         right--;
-        System.out.println(result);
+//        System.out.println(result);
         if (top <= bottom) {
             for (int i = right; i >= left ; i--) {
                 result.add(matrix[bottom][i]);
-                System.out.println(result);
+//                System.out.println(result);
             }
-            System.out.println(result);
+//            System.out.println(result);
             bottom--;
         }
 
@@ -29,7 +29,7 @@ public class Spiral {
                 for (int i = bottom; i >= top; i--) {
 
                     result.add(matrix[i][left]);
-                    System.out.println(left);
+//                    System.out.println(left);
                 }
                 left++;
             }
