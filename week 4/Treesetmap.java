@@ -7,7 +7,9 @@ public class Treesetmap {
         ts.add("B");
         ts.add("a");
         ts.add("C");
+
         System.out.println(ts);
+
         TreeMap tm = new TreeMap();
 
         tm.put("11", "B");

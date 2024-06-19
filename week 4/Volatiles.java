@@ -21,6 +21,7 @@ public class Volatiles {
             }
             System.out.println("Readerthread detected flag change");
         });
+
         writerThread.start();
         readerThread.start();
 
