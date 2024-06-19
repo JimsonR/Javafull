@@ -1,11 +1,11 @@
 import java.io.Writer;
 
 public class Volatiles {
-    private static  volatile boolean flag =false;
+    private static volatile boolean flag =false;
     public static void main(String[] args) throws InterruptedException {
         Thread writerThread = new Thread(()->{
             try{
-                Thread.sleep(1000);
+                Thread.sleep(100);
             }catch(InterruptedException e){
                 e.printStackTrace();
             }

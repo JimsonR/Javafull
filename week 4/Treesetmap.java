@@ -5,7 +5,7 @@ public class Treesetmap {
     public static void main(String[] args) {
         TreeSet ts = new TreeSet();
         ts.add("B");
-        ts.add("a");
+        ts.add("12");
         ts.add("C");
 
         System.out.println(ts);

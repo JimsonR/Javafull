@@ -7,16 +7,17 @@ public class SlidingWindow {
         ArrayList<Integer> list = new ArrayList<>();
 
         int sum = arr[0]+arr[1]+arr[2];
+        list.add(sum);
         int max = sum;
         for(int i=3;i<arr.length;i++) {
-            list.add(sum);
+
             sum += arr[i] - arr[i-3];
-            if(sum>max){
-                max = sum;
-            }
-
+            list.add(sum);
+//            if(sum>max){
+//                max = sum;
+//            }
         }
+//        System.out.println(max);
         System.out.println(list);
-
     }
 }

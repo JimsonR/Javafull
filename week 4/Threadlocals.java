@@ -30,6 +30,5 @@ System.out.println(Thread.currentThread().getName()+"initial value: "+ threadLoc
             thread1.start();
             thread2.start();
 
-
     }
 }
