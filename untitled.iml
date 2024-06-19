@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/week3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/week 1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/week 4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/serialize" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/out" />
     <orderEntry type="inheritedJdk" />
