@@ -7,7 +7,7 @@ public class PrintBytecode {
             fileIn.read(bytearray);
             System.out.println("Serialized object in byteCode:");
             for(byte b : bytearray){
-                System.out.print(b+" ");
+                System.out.printf("%02x   ",b);
 
             }
         }catch(IOException e){

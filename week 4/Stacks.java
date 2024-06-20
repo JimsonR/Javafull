@@ -7,6 +7,7 @@ public class Stacks {
         stack.push(20);
         stack.push(30);
         stack.push(40);
+//        stack.get(0);
         System.out.println(stack);
         System.out.println(stack.peek());
         stack.pop();
