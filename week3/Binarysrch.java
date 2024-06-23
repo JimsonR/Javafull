@@ -5,7 +5,7 @@ public class Binarysrch {
     public static void main(String[] args) {
         int[] arr = {1,2,3,5,45,2,3,24,23,423,543,5,324,423,4,234,23,423,4,23,42,34,23,423,4,234,233,42,34,6,54,645,6546,34354,523,42,34,23,423,4};
         HashMap<Integer,Integer> hm = new HashMap<>();
-        int target = 234;
+        int target = 34354;
         for(int i=0;i<arr.length;i++){
             if(hm.containsKey(arr[i])){
             }
@@ -38,7 +38,7 @@ public class Binarysrch {
         while (left <= right) {
             int mid =(left+right)/2;
             if (arr[mid] == target) {
-                System.out.println(arr[mid]);
+                System.out.println(mid);
                 break;
             }
             if (arr[mid] > target) {

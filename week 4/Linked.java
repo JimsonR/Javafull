@@ -13,6 +13,7 @@ public class Linked {
         }
 
         System.out.println(list.get(0));
+//        Iterator it = list.iterator();
         list.remove(0);
         list.add(0);
         list.add(0,1);

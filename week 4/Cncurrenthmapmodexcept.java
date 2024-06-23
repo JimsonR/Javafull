@@ -7,7 +7,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class Cncurrenthmapmodexcept extends Thread {
     public static void main(String[] args) throws InterruptedException {
 
-            HashMap<String, String> map = new HashMap<>();
+           HashMap<String, String> map = new HashMap<>();
 //        CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();
 
         map.put("1","one");
@@ -24,8 +24,8 @@ public class Cncurrenthmapmodexcept extends Thread {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-//                }
-            }
+                }
+//            }
         });
         Thread readert2 = new Thread(()->{
 //            synchronized (map){

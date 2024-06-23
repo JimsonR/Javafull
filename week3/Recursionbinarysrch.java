@@ -2,7 +2,7 @@ public class Recursionbinarysrch {
      static int binary(int left, int right,int target,int[] arr) {
         int c = 0;
         if(left <= right) {
-            int mid = left + right / 2;
+            int mid = left + (right-left) / 2;
             if (arr[mid] == target) {
                 return mid;
             }
@@ -20,7 +20,7 @@ public class Recursionbinarysrch {
     }
     public static void main(String[] args) {
         int[]  arr = {1,2,3,4,5,6,7,8,9};
-       int res =  binary(0,arr.length-1,4,arr);
+       int res =  binary(0,arr.length-1,6,arr);
         System.out.println(res);
     }
 }
