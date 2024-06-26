@@ -1,6 +1,6 @@
 interface FunctionalInterface {
-    void method();
-    void functionalMethod();
+    void method(int n);
+//    void functionalMethod();
 }
 abstract class AbstractFunctionalInterface implements FunctionalInterface {
     public abstract void method();
@@ -9,30 +9,32 @@ abstract class AbstractFunctionalInterface implements FunctionalInterface {
 }
 public class Lambdaas {
     public static void main(String[] args) {
-//        FunctionalInterface functionalInterface = () -> {
-//            System.out.println("Hello World");
-//        };
-        FunctionalInterface functionalInterface1 = new FunctionalInterface() {
-           public void method(){
-                System.out.println("Hello Lambdaas");
-            }
-            public void functionalMethod(){
-               System.out.println("Hello functionalMethod");
-            }
-        };
-        AbstractFunctionalInterface abstractFunctionalInterface = new AbstractFunctionalInterface() {
-            public void method(){
-                System.out.println("Hello Lambdaas");
-            }
-            public void functionalMethod(){
-                System.out.println("Hello functionalMethod");
-            }
-             void abstractmethod(){
-                System.out.println("Hello Lambdaas");
-            }
+        FunctionalInterface functionalInterface = (n)->  {
+            System.out.println("Hello World");
         };
 
-        functionalInterface1.method();
-        functionalInterface1.functionalMethod();
+        functionalInterface.method(10);
+//        FunctionalInterface functionalInterface1 = new FunctionalInterface() {
+//           public void method(){
+//                System.out.println("Hello Lambdaas");
+//            }
+//            public void functionalMethod(){
+//               System.out.println("Hello functionalMethod");
+//            }
+//        };
+//        AbstractFunctionalInterface abstractFunctionalInterface = new AbstractFunctionalInterface() {
+//            public void method(){
+//                System.out.println("Hello Lambdaas");
+//            }
+//            public void functionalMethod(){
+//                System.out.println("Hello functionalMethod");
+//            }
+//             void abstractmethod(){
+//                System.out.println("Hello Lambdaas");
+//            }
+//        };
+
+//        functionalInterface1.method();
+//        functionalInterface1.functionalMethod();
     }
 }
