@@ -8,6 +8,7 @@ public class Scannerpractise {
             if (sc.hasNextInt()) {
                 int x = sc.nextInt();
                 System.out.println(x);
+
             }
         }
     }
