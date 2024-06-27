@@ -7,13 +7,34 @@ abstract class AbstractFunctionalInterface implements FunctionalInterface {
     public abstract void functionalMethod();
      abstract void abstractmethod();
 }
+class Abcdef{
+    static  void method(){
+        System.out.println("Abcdef");
+    }
+
+}
+class Abcdef2 extends Abcdef{
+  static void method(){
+       System.out.println("Abcdef2");
+    }
+}
+
 public class Lambdaas {
     public static void main(String[] args) {
-        FunctionalInterface functionalInterface = (n)->  {
-            System.out.println("Hello World");
-        };
+//        Abcdef abcdef = new Abcdef();
+//        abcdef.method();
+        Abcdef abcdef2 = new Abcdef2();
+        Abcdef2 abcdef21 = new Abcdef2();
+        abcdef21.method();
 
-        functionalInterface.method(10);
+
+
+//        FunctionalInterface functionalInterface = (n)->  {
+//            System.out.println("Hello World");
+//        };
+//
+//        functionalInterface.method(10);
+
 //        FunctionalInterface functionalInterface1 = new FunctionalInterface() {
 //           public void method(){
 //                System.out.println("Hello Lambdaas");

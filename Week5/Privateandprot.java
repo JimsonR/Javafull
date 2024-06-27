@@ -21,6 +21,7 @@
   }
 class Protectedcla{
 
+
 }
 public class Privateandprot {
 //    private class Privatecla1{
