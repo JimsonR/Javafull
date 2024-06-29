@@ -1,6 +1,9 @@
 interface FunctionalInterface {
     void method(int n);
 //    void functionalMethod();
+    interface FunctionalInterface2 {
+        int method5(int n);
+}
 }
 abstract class AbstractFunctionalInterface implements FunctionalInterface {
     public abstract void method();
@@ -27,11 +30,16 @@ public class Lambdaas {
         Abcdef2 abcdef21 = new Abcdef2();
         abcdef21.method();
 
+//Lip sad = new Lip() {
+//    @Override
+//    public void show() {
+//
+//    }
+//};
 
-
-//        FunctionalInterface functionalInterface = (n)->  {
-//            System.out.println("Hello World");
-//        };
+        FunctionalInterface functionalInterface = (n)->  {
+            System.out.println("Hello World");
+        };
 //
 //        functionalInterface.method(10);
 

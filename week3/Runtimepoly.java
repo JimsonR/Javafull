@@ -17,7 +17,7 @@ class Parent extends Grandparent{
     System.out.println("parent");
 }
 }
-class Child extends Parent{
+class Child extends Parent321 {
 //    int i = 20;
 //    Child(){
 //        System.out.println("child");
@@ -30,8 +30,8 @@ class Child extends Parent{
 }
 public class Runtimepoly {
     public static void main(String[] args) {
-            Parent p = new Child();
-            p.sound();
+            Parent321 p = new Child();
+//            p.sound();
             Child child = new Child();
             child.sound();
     }

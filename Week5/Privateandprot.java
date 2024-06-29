@@ -32,6 +32,8 @@ public class Privateandprot {
 //    }
     public static void main(String[] args) {
         Privateandprot p = new Privateandprot();
+//        Test test = null;
+//        System.out.println(test.i);
 //        p.m1();
 //        Privateandprot.Privatecla1 p1 = p.new Privatecla1();
         Privatecla privatecla = new Privatecla();
