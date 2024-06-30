@@ -1,18 +1,23 @@
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.HashMap;
 
 interface Lip {
-    interface Pol{
-        default void pol(){
-            System.out.println("Polling");
-        }
-    }
+//
+//    interface Pol{
+//        default void pol(){
+//            System.out.println("Polling");
+//        }
+//    }
     void pol();
     void show();
 //    void show(String s);
 // void m1(){
 //     System.out.println("Lip");
 // }
+    private void m3(){
+        System.out.println("sassd");
+    }
 
     int j = 10;
 
@@ -32,6 +37,7 @@ abstract class AbstractPol{
     abstract void show2();
     void shoasd(){
         System.out.println("AbstractPol");
+
     }
     abstract void show3();
 }
@@ -76,7 +82,9 @@ public class Question05 extends AbstractPol implements Lip {
     }
     public static void main(String[] args) {
 
+
         AbstractPol abpol = new Question05();
+//        Lip.j++;
 
 
 
@@ -107,12 +115,12 @@ public class Question05 extends AbstractPol implements Lip {
 
 
 //        Adsad adsad = new Adsad();
-        Lip lip2 = new Lip() {
-           public void show(){
-//                System.out.println("Lip");
-            }
-
-        };
+//        Lip lip2 = new Lip() {
+//           public void show(){
+////                System.out.println("Lip");
+//            }
+//
+//        };
 //        lip2.
 
 

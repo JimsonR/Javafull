@@ -19,11 +19,12 @@ public class Parent321 {
 }
 
 class MyChild extends Parent321 {
-    static {
-        System.out.println("Inside Child static");
+     {
+        System.out.println("Inside child init");
     }
+    static
     {
-        System.out.println("Inside Child init");
+        System.out.println("Inside Child Static");
     }
     public MyChild(){
 //        super();
