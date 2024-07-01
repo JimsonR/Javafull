@@ -23,11 +23,11 @@ public class JavaStreams {
            Stream<Integer> streams3 = streams2.map(x->x*x).map(x->x*x);
 
 //                    .toList()
-//                      .filter(x-> x<5)
-//                            .map(x-> x*x)
-//                                .forEach(x->{
-//                                             System.out.println(x);
-//                                            });
+                     streams2
+                            .map(x-> x*x)
+                                .forEach(x->{
+                                             System.out.println(x);
+                                            });
 //        System.out.println(stream.count());
 
 

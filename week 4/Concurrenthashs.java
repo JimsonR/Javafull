@@ -7,6 +7,9 @@ public class Concurrenthashs extends Thread {
         ConcurrentHashMap<Integer, String> map = new ConcurrentHashMap<>();
         CopyOnWriteArrayList<Integer> list = new CopyOnWriteArrayList<>();
         ConcurrentHashMap<Integer, String> map2 = new ConcurrentHashMap<>();
+
+
+
         ConcurrentLinkedQueue<Integer> queue = new ConcurrentLinkedQueue<>();
         ConcurrentLinkedDeque<Integer> deque = new ConcurrentLinkedDeque<>();
         ConcurrentSkipListMap<Integer, String> map3 = new ConcurrentSkipListMap<>();
