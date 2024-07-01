@@ -13,10 +13,10 @@ public class Binarysrch {
                 hm.put(arr[i], i);
             }
         }
-        System.out.println(hm);
+//        System.out.println(hm);
 
             if(hm.containsKey(target)){
-                System.out.println(hm.get(target));
+//                System.out.println(hm.get(target));
             }
 
         for (int i = 0; i < arr.length; i++) {
