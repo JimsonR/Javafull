@@ -1,11 +1,13 @@
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Stream;
 
 public class Practise123 implements Runnable{
     Integer a;
 
     public void run(){
-        System.out.println("asd");
+//        System.out.println("asd");
     }
 //    synchronized  void m1(){
 //
@@ -74,24 +76,33 @@ public class Practise123 implements Runnable{
                 synchronized (arr1){
 
                     for (int i = 0; i < arr1.length; i++) {
-                        System.out.print(arr1[i] + " ");
+//                        System.out.print(arr1[i] + " ");
                     }
-                    System.out.println();
+//                    System.out.println();
                 }
             }
         };
+        ExecutorService executorService = Executors.newFixedThreadPool(4);
+
+        executorService.submit(()->{
+           for(int i = 0 ; i< arr1.length;i++){
+
+               System.out.print(arr1[i]+"  ");
+
+           }
+        });
 
 
-        Thread t1 = new Thread(run);
-
-
-        Thread t2 = new Thread(run);
-
-
-        t1.start();
-
-
-        t2.start();
+//        Thread t1 = new Thread(run);
+//
+//
+//        Thread t2 = new Thread(run);
+//
+//
+//        t1.start();
+//
+//
+//        t2.start();
 
 
 //        Thread t1 = new Thread(()->{
