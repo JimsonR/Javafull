@@ -6,25 +6,32 @@ interface Int1{
 
     }
 }
-interface Int2{
+interface Int2 extends  Int1{
     default void m1(){
         System.out.println("Interface 2");
     }
 }
 public class Vtest  implements Int1,Int2 {
-    @Override
-    public void m1() {
-        System.out.println("asdasd");
+
+     void m12(){
+
+     }
+   static{
+        new Vtest().m12();
+        Vtest vtest = new Vtest();
+        System.out.println(vtest.i);
     }
+//    @Override
+//    public void m1() {
+//        System.out.println("asdasd");
+//    }
+ static {
+    System.out.println();
+}
+
+   static int i = 0;
 
 
-
-    int i;
-
- {
-//     int i;
-        System.out.println(i);
-    }
 
 
 

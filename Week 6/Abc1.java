@@ -11,12 +11,18 @@ class Test1{
 }
 
 public class Abc1 extends Test1{
-    void m2(){
+    void m1(){
 
     }
     public static void main(String[] args){
-        Test1 abc = new Abc1();
-//        abc.m2();
+        Abc1 abc = new Abc1(){
+            void m1(){
+                System.out.println("asdasd");
+            }
+        };
+
+
+//        abc.m1();
         Integer[] arr = new Integer[10];
         System.out.println(arr[1]);
 
