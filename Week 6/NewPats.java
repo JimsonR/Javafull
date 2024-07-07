@@ -6,8 +6,39 @@ public class NewPats {
         for (int i = 0; i < 10; i++) {
             s[i] = "";
             for (int j = 0; j < 10; j++) {
-                if (j == 5 | j == 6 && i > 1 && i < 8) {
+                if (j == 4 | j == 5  && i > 1 && i < 9) {
 //                System.out.print("*"+" ");
+                    s[i] += "* ";
+                } else if (j< 8 && j > 1 && i == 2 | i == 3 | i == 7 | i == 8) {
+                    s[i] += "* ";
+
+
+                } else {
+
+//                System.out.print(" ");
+                    s[i] += "  ";
+
+                }
+
+
+            }
+
+//        System.out.println();
+//            s += "\n";
+
+        }
+        return s;
+    }
+    String[] t() {
+        String[] s = new String[10];
+        for (int i = 0; i < 10; i++) {
+            s[i] = "";
+            for (int j = 0; j < 10; j++) {
+                if (j == 4 | j == 5 && i > 1 && i < 9) {
+//                System.out.print("*"+" ");
+                    s[i] += "* ";
+                }
+                else if (j > 1 && j < 8 && i == 2 | i == 3 ) {
                     s[i] += "* ";
                 } else {
 

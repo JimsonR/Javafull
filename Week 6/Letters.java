@@ -14,7 +14,7 @@ public class Letters {
         letters.put('g', new Patternsstar().g());
         letters.put('h', new Patternsstar().h());
         letters.put('i', new NewPats().i());
-        letters.put('j', new Patternsstar().J());
+        letters.put('j', new Patternsstar().j());
         letters.put('k', new Patternsstar().k());
         letters.put('l', new Patternsstar().l());
         letters.put('m', new Patternsstar().m());
@@ -22,12 +22,12 @@ public class Letters {
         letters.put('o', new Patternsstar().o());
         letters.put('p', new Patternsstar().p());
         letters.put('q', new Patternsstar().q());
-//        letters.put('r', new Patternsstar().r());
+        letters.put('r', new Patternsstar().r());
         letters.put('s', new Patternsstar().s());
-//        letters.put('t', new Patternsstar().t());
+        letters.put('t', new NewPats().t());
         letters.put('u', new Patternsstar().u());
         letters.put('v', new Patternsstar().v());
-//        letters.put('w', new Patternsstar().w());
+        letters.put('w', new Patternsstar().w());
         letters.put('x', new Patternsstar().x());
         letters.put('y', new Patternsstar().y());
         letters.put('z', new Patternsstar().z());
@@ -47,7 +47,7 @@ public class Letters {
 //        System.out.println(letters.get('m'));
 //        System.out.print(letters.get('j'));
 
-        String s = "jhax";
+        String s = "wasim";
         String out = "";
         for(int j = 0 ; j<10; j++){
             for(int i = 0; i<s.length(); i++){

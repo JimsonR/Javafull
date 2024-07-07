@@ -150,11 +150,11 @@ public class Patternsstar {
             for (int j = 0; j < 10; j++) {
 
                 if ( j == 9 - i | j == 10 - i | j == i - 2 | j == i -1 && i > 2 && i < 9 ) {
-                    s[i] += " * ";
+                    s[i] += "* ";
 
                 }
                 else if (j == 1 | j == 2 | j == 6 | j == 7  && i == 3 | i == 2 ) {
-                    s[i] += " * ";
+                    s[i] += "* ";
                 }
 //            else if (j == i - 2 && i>1 & i<9|| j == i - 3 && i>1 & i<9 ) {
 //                s[i] += "* ";
@@ -350,7 +350,7 @@ public String[] n(){
         for(int i = 0; i<10 ; i++){
             s[i] = "";
             for(int j = 0 ; j < 10 ; j++){
-                if(j == 0 && i < 9 && i>1 || j == 1 && i < 9 && i>1  || j == 7 && i < 9 && i>1 || j == 8 && i < 9 && i>1){
+                if(j == 1 && i < 9 && i>1 || j == 2 && i < 9 && i>1  || j == 6 && i < 9 && i>1 || j == 7 && i < 9 && i>1){
 //              System.out.print("* ");
                     s[i] += "* ";
                 }
@@ -407,33 +407,70 @@ public String[] m(){
 
     return s;
 }
-public String[] y() //j == 35|j==36 && i == 3 | i == 2|| j == 41 | j == 42 && i == 3 | i ==2
-{
-String[] s = new String[10];
-for (int i = 0 ; i< 10; i++) {
-    s[i] = "";
-    for (int j = 0 ; j< 10 ; j++) {
-        if (j == 0 | j == 1 && i == 3 | i == 2 || j == 7 | j == 8 && i == 3 | i == 2) {
+    public String[] w(){
+        String[] s = new String[10];
+        for(int i = 0; i < 10; i++){
+            s[i] ="";
+            for(int j = 0; j < 10 ; j++){
 
-            s[i]  += "* ";
+                if (j == 1 && i > 1 && i< 9 || j == 2 && i > 1 && i< 9) {
+                    s[i] += "* ";
+                }
 
+                else if (j == 8 && i > 1 && i < 9|| j == 9 && i > 1 && i < 9) {
+                    s[i] += "* ";
+                }
+                else if (j == 3 && i== 8 || j == 7 && i==8 ) {
+
+                    s[i] += "* ";
+                }
+                else if (j == 3 && i== 7|| j == 7 && i==7) {
+                    s[i] += "* ";
+                }
+                else if(j == 4 && i == 6 || j == 6 && i == 6){
+                    s[i] += "* ";
+                }
+                else if (j==5 && i == 5) {
+                    s[i] += "* ";
+
+                }
+                else{
+                    s[i] += "  " ;
+                }
+
+            }
+//        s += "\n";
         }
-        else if (j == 1 | j == 2 && i == 4  || j == 6 | j == 7 && i == 4) {
-//            System.out.print(" " + "  ");
-            s[i] += "* ";
-        }
-        else if (j == 5 | j == 6 && i > 4 && i < 8) {
-//            System.out.print(" " + "  ");
-            s[i] += "* ";
-        }
-        else{
-            s[i] += " ";
-        }
+
+
+        return s;
     }
-}
+    public String[] y(){
+        String s[] = new String[10];
+        for (int i = 0; i < 10; i++) {
+            s[i] = "";
 
-return s;
-}
+            for (int j = 0; j < 10; j++) {
+
+                if ( j == 10 - i  | j == 11 - i | j == i + 1 | j == i && i > 1 && i < 5) {
+                    s[i] += "* ";
+
+                }
+                else if ( j == 5 | j == 6  && i > 3 && i < 9 ) {
+                    s[i] += "* ";
+                }
+//            else if (j == i - 2 && i>1 & i<9|| j == i - 3 && i>1 & i<9 ) {
+//                s[i] += "* ";
+//
+//            }
+                else {
+                    s[i] += "  ";
+                }
+            }
+
+        }
+        return s;
+    }
 public String[] b(){
     String[] s = new String[10];
 
@@ -491,6 +528,35 @@ return s;
                     s[i] += "  ";
                 }
             }
+        }
+        return s;
+    }
+    public String[] r() {
+
+        String s[] = new String[10];
+        for (int i = 0; i < 10; i++) {
+            s[i] = "";
+
+            for (int j = 0; j < 10; j++) {
+                if (j == 0 && i>1 & i<9 || j == 1 && i>1 & i<9) {
+//              System.out.print("* ");
+                    s[i] += "* ";
+                }
+                else if (i == 2 && j > 1 && j < 6 || i == 3 && j > 1 && j < 7 || i == 5 && j > 1 && j < 7 || i == 6 && j > 1 && j < 6) {
+                    s[i] += "* ";
+
+                } else if (i == 4 && j == 5 | j== 6) {
+                    s[i] += "* ";
+
+                } else if (j == i - 2 && i>1 & i<9 && i != 4|| j == i - 3 && i>1 & i<9 ) {
+                    s[i] += "* ";
+
+                }
+                else {
+                    s[i] += "  ";
+                }
+            }
+
         }
         return s;
     }
@@ -589,16 +655,16 @@ public String[] u(){
 
 
 
-public String[] J(){
+public String[] j(){
     String[] s = new String[10];
     for(int i = 0; i<10; i++){
         s[i] = "";
         for(int j = 0; j<10 ; j++){
             if(j == 8 | j == 9 && i>1 && i<8 ) {
 //                System.out.print("*"+" ");
-                s[i] += "*"+" ";
+                s[i] += "* ";
             }
-            else if (j > 1 && i == 7 | i == 6 ){
+            else if (j > 1 && i == 7 | i == 8 ){
             s[i] += "* ";
             }
             else{
