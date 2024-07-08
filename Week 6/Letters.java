@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Letters {
     public static void main(String[] args) {
@@ -33,6 +34,15 @@ public class Letters {
         letters.put('z', new Patternsstar().z());
 
 
+        for(Map.Entry<Character, String[]> maps : letters.entrySet()){
+            for(int i = 0 ; i < maps.getValue().length; i++){
+//                System.out.println(maps.getValue()[i]);
+
+            }
+
+        }
+
+
 
 
 
@@ -46,20 +56,30 @@ public class Letters {
 
 //        System.out.println(letters.get('m'));
 //        System.out.print(letters.get('j'));
-
-        String s = "wasim";
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
         String out = "";
+        String[] res = new String[10];
+
         for(int j = 0 ; j<10; j++){
+            res[j] = "";
             for(int i = 0; i<s.length(); i++){
 
                 out += letters.get(s.charAt(i))[j]+" ";
-//                System.out.print(letters.get(s.charAt(i))[j]);
+                res[j] += letters.get(s.charAt(i))[j];
+//                System.out.println();
+
+
             }
 
 
             out += "\n";
         }
-        System.out.println(out);
+//        System.out.println(Arrays.toString(res));
+        for(int i = 0 ; i < res.length;i++){
+            System.out.println(res[i]);
+        }
+//        System.out.println(out);
 
 //    for (Map.Entry<Character, String[]> maps : letters.entrySet()) {
 //

@@ -1,7 +1,7 @@
 import java.util.Collections;
 import java.util.Vector;
 
-public class Patternsstar {
+public final class Patternsstar {
     public String[] c() {
         String s[] = new String[10];
         for (int i = 0; i < 10; i++) {
@@ -276,11 +276,11 @@ public String[] a(){
         for (int i = 0; i < 10; i++) {
             s[i] = "";
             for (int j = 0; j < 10; j++) {
-                if (j == 1 | j == 2 && i > 1 && i < 8) {
+                if (j == 1 | j == 2 && i > 1 && i <= 8) {
 //                System.out.print("*"+" ");
                     s[i] += " * ";
-                } else if (j>0 && j < 6 && i == 7 | i == 8) {
-                    s[i] += " * ";
+                } else if (j>0 && j < 9 && i == 7 | i == 8) {
+                    s[i] += "* ";
 
                 } else {
 
@@ -375,11 +375,11 @@ public String[] m(){
         s[i] ="";
         for(int j = 0; j < 10 ; j++){
 
-            if (j == 1 && i > 1 && i< 8 || j == 2 && i > 1 && i< 8) {
+            if (j == 1 && i > 1 && i< 9 || j == 2 && i > 1 && i< 9) {
                 s[i] += "* ";
             }
 
-            else if (j == 8 && i > 1 && i < 8|| j == 9 && i > 1 && i < 8) {
+            else if (j == 8 && i > 1 && i < 9|| j == 9 && i > 1 && i < 9) {
                 s[i] += "* ";
             }
             else if (j == 3 && i== 2 || j == 7 && i==2 ) {
