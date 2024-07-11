@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 class Nocal{
     static {
@@ -23,9 +20,9 @@ public class SlidingWindow1 {
 
 
     public static void main(String[] args){
-        SlidingWindow1 slidingWindow1 = null;
-
-        slidingWindow1.m1();
+//        SlidingWindow1 slidingWindow1 = null;
+//
+//        slidingWindow1.m1();
 //        Integer i = null;
 //        System.out.println(Integer.valueOf(i));
 //        ArrayList arrayList = new ArrayList();
@@ -38,7 +35,15 @@ public class SlidingWindow1 {
 //                    newlist.add(i);
 //                }
 ////            }
+//        for(int i =0 ; i<10; i++){
+//            {
 //
+//            }
+//        }
+////        Stack<int> j= new Stack<int>()
+//
+        String s = "";
+        System.out.println(s);
 //        };
 ////        new Runnable() {
 ////            @Override
@@ -123,8 +128,10 @@ public class SlidingWindow1 {
 //
 
 
-
-
-
+//float num = 5/0;
+String s1 = "jim";
+String s2 = s1+"son";
+String sum = "jimson";
+        System.out.println(s2.hashCode()+" "+sum.hashCode());
     }
 }

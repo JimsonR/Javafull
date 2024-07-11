@@ -12,6 +12,7 @@ public class Hashmap {
             v.add(arr[i]);
             hashtable.put(arr[i],i);
         }
+        
 //        System.out.println(hashtable);
 //        System.out.println(hm);
         System.out.println(v);

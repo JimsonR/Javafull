@@ -14,5 +14,6 @@ public class Scan {
         String s = in.next();
         boolean found = in.nextBoolean();
 //        char c = ;
+
     }
 }

@@ -1,7 +1,4 @@
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class Letters {
     public static void main(String[] args) {
@@ -98,6 +95,7 @@ public class Letters {
 //            System.out.print(maps.getValue());
 //
 //        }
+
 
     }
 }
