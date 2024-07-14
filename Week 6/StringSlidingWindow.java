@@ -129,36 +129,39 @@ public class StringSlidingWindow {
 //            res[i] = arrayList.get(i);
 //        }
 //        System.out.println(Arrays.toString(res));
+////
+//        ArrayList<Integer> arrayList = new ArrayList<>();
+//        ArrayList<Integer> newList = new ArrayList<>();
+//        for(int i = 0 ; i< nums2.length;i++){
+//            arrayList.add(nums2[i]);
 //
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        ArrayList<Integer> newList = new ArrayList<>();
-        for(int i = 0 ; i< nums2.length;i++){
-            arrayList.add(nums2[i]);
+//        }
+//        for(int j = 0 ; j < nums1.length;j++){
+//            if(arrayList.contains(nums1[j])){
+//                System.out.println(nums1[j]);
+//                newList.add(nums1[j]);
+//            }
+//        }
+//        int[] res = new int[newList.size()];
+//
+//        for(int i = 0 ; i < newList.size() ; i++){
+//            res[i] = newList.get(i);
+//        }
+//
+//        System.out.println(Arrays.toString(res));
+//
+////        String s = null;
+////        System.out.println(s.length());
+//
+//        Double d = 10.9;
+//        System.out.println(d.intValue());
+//        char[] c = new char[3];
+//        System.out.println(c[1]);
+//        String str1 = "hello";
+//        String str2 = "he" + "llo";
+//        System.out.println(str1 == str2);
 
-        }
-        for(int j = 0 ; j < nums1.length;j++){
-            if(arrayList.contains(nums1[j])){
-                System.out.println(nums1[j]);
-                newList.add(nums1[j]);
-            }
-        }
-        int[] res = new int[newList.size()];
 
-        for(int i = 0 ; i < newList.size() ; i++){
-            res[i] = newList.get(i);
-        }
-
-        System.out.println(Arrays.toString(res));
-
-//        String s = null;
-//        System.out.println(s.length());
-
-        Double d = 10.9;
-        System.out.println(d.intValue());
-        char[] c = new char[3];
-        System.out.println(c[1]);
-        String str1 = "hello";
-        String str2 = "he" + "llo";
-        System.out.println(str1 == str2);
+        System.out.println(NumbersSubbu.class.getClassLoader());
     }
 }

@@ -60,5 +60,7 @@ public class InterfaceExample1 {
         System.out.println("Circle Perimeter: " + circle.perimeter());
         System.out.println("Rectangle Area: " + rectangle.area());
         System.out.println("Rectangle Perimeter: " + rectangle.perimeter());
+
+
     }
 }

@@ -3,10 +3,9 @@ import java.util.concurrent.*;
 import java.util.stream.Stream;
 
 public class Arraylist {
-    {
-//        System.out.println("adsasd");
-    }
+
 //    int i = 0;
+
     public static void main(String[] args) {
 //        ArrayList<String> list = new ArrayList<String>();
 //        System.out.println("jim");
@@ -90,9 +89,7 @@ public class Arraylist {
 //        stream.filter(x -> !(x >= 40 && x <= 60));
 //
 
-
-
-        LinkedList<Integer> linkedList = new LinkedList<>();
+      LinkedList<Integer> linkedList = new LinkedList<>();
 
         for(int i=1; i<=20; i++){
             linkedList.add(i);
@@ -104,8 +101,39 @@ public class Arraylist {
 
         ListIterator<Integer> iterator1 = linkedList.listIterator(linkedList.size()-1);
 
-        while(iterator1.hasPrevious()){
-            System.out.println(iterator1.previous());
-        }
+//        while(iterator1.hasPrevious()){
+//            System.out.println(iterator1.previous());
+//        }
+
+
+        int a = 10;
+        int b = 20;
+        System.out.println(a > b ? a : b);
+
+        String s1 = "Java";
+        String s2 = "Programming";
+        System.out.println(s1.substring(1, 3));
+
+        int x = 10;
+        int y = 3;
+        System.out.println(x % y);
+        int[] arr = new int[5];
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 3;
+        arr[3] = 4;
+        arr[4] = 5;
+//        System.out.println(arr[5]);
+        int result = 15 / 4;
+
+        String str1 = "example";
+        String str2 = str1.replace('e', 'a');
+        System.out.println(str2);
+        System.out.println(result);
+
+
+
+
+
     }
 }
