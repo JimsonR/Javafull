@@ -1,4 +1,7 @@
+import java.io.Externalizable;
+import java.lang.reflect.Proxy;
 import java.util.LinkedList;
+import java.util.stream.Stream;
 
 public class ListNodes {
     public static void main(String[] args) {
@@ -20,7 +23,7 @@ public class ListNodes {
        while (current != null){
 
            ListNode next = current.next;
-           System.out.println(current.val);
+//           System.out.println(current.val);
            current.next = prev;
 
            prev = current;
@@ -43,6 +46,38 @@ public class ListNodes {
 
 
        }
+
+       ListNode head = new ListNode(3);
+       head.next= new ListNode(2);
+       head.next.next=new ListNode(0);
+       head.next.next.next = new ListNode(-4,head.next);
+//       head.next.next.next.next = new ListNode(5, head.next);
+
+       ListNode slow = head;
+       ListNode fast = head;
+
+       while (fast != null && fast.next != null){
+           slow = slow.next;
+
+
+           fast = fast.next.next;
+
+           if(slow == fast){
+//               System.out.println(fast);
+//               break;
+               while(slow != fast ){
+                   slow = slow.next;
+                   fast = fast.next;
+
+               }
+               System.out.println(slow);
+               break;
+           }
+//           System.out.println();
+
+       }
+
+
 
 
 

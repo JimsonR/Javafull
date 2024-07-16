@@ -49,6 +49,7 @@ class RanAway implements Runnable {
                System.out.println(Thread.currentThread().getName()+" "+i);
            }
            }
+
     }
 }
 public class Threadpractise {
