@@ -1,10 +1,10 @@
 import java.util.*;
 import java.util.stream.Stream;
 
-public class Test <T> {
+public class Tests <T> {
     T list;
 
-    Test(){
+    Tests(){
 //        this.list = list;
 
     }

@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Vector;
 
 public class Threadpractise1 implements Runnable {
     volatile int j ;
@@ -61,10 +60,10 @@ public class Threadpractise1 implements Runnable {
 
 
         };
-Threadpractise threadpractise = new Threadpractise();
-        Thread thread1 = new Thread(threadpractise);
+Threadpractise1 threadpractise1 = new Threadpractise1();
+        Thread thread1 = new Thread(threadpractise1);
 
-        Thread thread2 = new Thread(threadpractise);
+        Thread thread2 = new Thread(threadpractise1);
 
         Thread thread3 = new Thread(()->{
          synchronized (arrayList1)  {
