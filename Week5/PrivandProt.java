@@ -23,8 +23,6 @@ class SubbuOuterClass{
          }
     }
 }
-
-
 public class PrivandProt {
     HashMap<Integer, Integer> sadsad = new HashMap<>();
     Map<Integer, Integer> sadsad2 = Collections.synchronizedMap(sadsad);

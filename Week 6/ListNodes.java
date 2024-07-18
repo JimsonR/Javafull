@@ -1,5 +1,6 @@
 import java.io.Externalizable;
 import java.lang.reflect.Proxy;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.stream.Stream;
 
@@ -70,15 +71,21 @@ public class ListNodes {
                    fast = fast.next;
 
                }
-               System.out.println(slow);
+//               System.out.println(slow);
                break;
            }
 //           System.out.println();
 
        }
 
+   Number [] arr = {3, 7, 6, -10, 15, 23.5, 55, -13};
+        int left = 0;
+        int mid = (arr.length+left)/2;
 
-
+       Number [] leftArr =  Arrays.copyOfRange(arr, left, mid);
+       Number [] rightArr = Arrays.copyOfRange(arr,mid, arr.length);
+        System.out.println(Arrays.toString(leftArr));
+        System.out.println(Arrays.toString(rightArr));
 
 
 

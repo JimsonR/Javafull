@@ -45,16 +45,25 @@ public class MatJyots {
 //            System.out.println(iterator.next());
 //        }
        ListIterator<Integer> iterator1 = linkedList.listIterator();
-        System.out.println(iterator1.previous());
+//        System.out.println(iterator1.previous());
         Iterator prev = null;
 //        Iterator<Integer> next = iterator1.next();
 
 ArrayList<Integer> arrayList = new ArrayList<>();
 
 Collections.addAll(arrayList, 1,2,34,54,6,6,3,1);
-for(int i = 0; i < arrayList.size(); i++){
+//for(int i = 0; i < arrayList.size(); i++){
+//    arrayList.remove(i);
+//}
+//arrayList.add(22);
+        arrayList.stream().map(x->x*x);
+for(Integer i: arrayList){
+
     arrayList.remove(i);
+//    System.out.println(i);
 }
+
+
 
 
     }
