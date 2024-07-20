@@ -28,31 +28,22 @@ public class Tests <T> {
     public static void main(String[] args)throws InterruptedException{
 
 //        main();
-//
-//        main(1,2);
 
+//        main(1,2);
         ArrayList list = new ArrayList<>();
         list.add(1);        // Integer
         list.add(2.5);      // Double
         list.add(3L);       // Long
         list.add(4.75f);    // Float
         list.add("asd");
-
 //        Test<? super Number> test = new Test<>("asd");
-
         String s = "";
 //        System.out.println(s.contains('s'+""));
 //        Test<ArrayList<? extends Number>> test = new Test<>(list);
 //        test.list.add(1);
-
 //        System.out.println(test.list);
-
 //        printList(list);
-
 //        Test<List<? extends Number>> test = new Test<>();
-
-
-
 //        System.out.println(test.list);
 //        ArrayList<Integer> array = new ArrayList();
 //
@@ -99,10 +90,7 @@ public class Tests <T> {
 //                System.out.println(arr[i]);
             }
             unique ^= arr[i];
-
         }
-
-
     }
 }
 

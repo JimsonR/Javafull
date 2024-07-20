@@ -1,5 +1,7 @@
 
-public class EnumJyoths {
+public class
+
+EnumJyoths {
     public enum Day{
         SUNDAY, MONDAY, TUESDAY , WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
     }
