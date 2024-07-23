@@ -4,7 +4,7 @@ import java.util.HashMap;
 public class Leetdiscuss {
     public static void main(String[] args) {
 
-        int [] nums ={8,1,2,2,3};
+        int[] nums ={8,1,2,2,3};
 
         int[] count = new int[100];
 
