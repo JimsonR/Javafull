@@ -4,8 +4,9 @@ public class LeetCode1 {
 //        String r = "";
         StringBuilder stringBuilder = new StringBuilder();
 
-        int oneCount = 0;
+        int  oneCount = 0;
         int zeroCount = 0;
+
         char[] chars = s.toCharArray();
 
         for(int i = 0; i< s.length();i++){
@@ -29,6 +30,7 @@ public class LeetCode1 {
 
 
         System.out.println(stringBuilder);
+
 
 
 

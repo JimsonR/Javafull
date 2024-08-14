@@ -20,6 +20,10 @@ public class Collection3 {
         arraylist.add(4);
         arraylist.remove(2);
 
+        System.out.println(arraylist.hashCode());
+
+
+
         Iterator<Integer> iterator = arraylist.reversed().iterator();
 
         while(iterator.hasNext()){

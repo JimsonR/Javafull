@@ -16,9 +16,7 @@ public class BInsch {
                 return recurbinsrch(arr, target, mid + 1, right);
             }
         }
-
         return -1;
-
 }
      static int[] mergeSort(int[] arr){
         if(arr.length<=1){

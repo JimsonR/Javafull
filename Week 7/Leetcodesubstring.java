@@ -6,7 +6,7 @@ public class Leetcodesubstring {
     public static void main(String[] args) {
 
         String s = "abcabcbb";
-
+        System.out.println(s.compareTo("abcabcbb"));
 //        int left = 0;
 //        int maxLength = 0;
 //        HashSet<Character> hashSet = new HashSet<>();
