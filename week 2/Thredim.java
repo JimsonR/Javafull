@@ -24,6 +24,10 @@ public class Thredim {
 
         }
     System.out.println(Arrays.deepToString(arr));
+
+        Stacks stacks = new Stacks();
+        System.out.println(stacks.a);
+
     }
 
 

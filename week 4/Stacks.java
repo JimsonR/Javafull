@@ -1,6 +1,8 @@
 import java.util.Stack;
 
 public class Stacks {
+  protected int a = 10;
+
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<Integer>();
         stack.push(10);
@@ -12,5 +14,6 @@ public class Stacks {
         System.out.println(stack.peek());
         stack.pop();
         System.out.println(stack.peek());
+
     }
 }

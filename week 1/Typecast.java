@@ -11,5 +11,28 @@ public class Typecast {
         System.out.println(f);
         System.out.println(l);
         System.out.println(b);
+        int[] arr = {16};
+        int[][] queries = {{0,0},{0,0},{0,0},{0,0}};
+        int[] result = new int[queries.length];
+
+        // for(int i = 0 ; i < arr.length ; i++){
+
+        //     hm.put(i,arr[i]);
+
+        // }
+
+
+        for(int i = 0 ; i < queries.length ; i++){
+//            result[i] = arr[queries[i][0]];
+
+                result[i] =  arr[queries[i][0]] ^ arr[queries[i][1]];
+
+
+        }
+        System.out.println(result);
+
+        System.out.println(3 & 3 & 3);
     }
+
+
 }
