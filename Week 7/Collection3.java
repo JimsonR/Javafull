@@ -1,4 +1,6 @@
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Collection3 {
     public static void main(String[] args) {
@@ -19,6 +21,8 @@ public class Collection3 {
         arraylist.add(3);
         arraylist.add(4);
         arraylist.remove(2);
+
+
 
         System.out.println(arraylist.hashCode());
 

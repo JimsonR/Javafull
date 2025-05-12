@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -15,7 +16,7 @@ public class Newone2 {
 //        s1.stream().forEach(x->);
         Collections.addAll(s1, s.split(""));
 
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 
 //        long l1 = sc.nextLong();
 //        System.out.println(l1);
@@ -45,7 +46,7 @@ public class Newone2 {
 
         // }
 
-        System.out.println( Jyosalukkas.uhu );
+//        System.out.println( Jyosalukkas.uhu );
 
         for(int i = 0 ; i < queries.length ; i++){
             result[i] = arr[queries[i][0]];
@@ -54,5 +55,23 @@ public class Newone2 {
             }
         }
         System.out.println(result);
+
+        String s23 = "ji m";
+        System.out.println(s23.split(" "));
+        List<String> list = new ArrayList<>();
+
+        for (String i : s23.split(" ")) {
+
+        }
+        String[] arr1 = {"mass","as","hero","superhero"};
+        List<String> lst = new ArrayList<>();
+        Collections.addAll(lst,arr1);
+        for(int i = 0 ; i < arr1.length ; i++){
+            lst.remove(arr1[i]);
+
+        }
+
+
+
     }
 }

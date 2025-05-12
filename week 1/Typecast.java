@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Typecast {
     public static void main(String[] args) {
         int c = 10;
@@ -29,7 +31,7 @@ public class Typecast {
 
 
         }
-        System.out.println(result);
+        System.out.println(Arrays.toString(result));
 
         System.out.println(3 & 3 & 3);
     }

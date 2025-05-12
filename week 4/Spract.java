@@ -1,8 +1,6 @@
 public class Spract {
     public static void main(String[] args) {
-        int[][] matrix = {{1, 2, 3,4},
-                          {4, 5, 6,5},
-                          {7, 8, 9,6}};
+        int[][] matrix = {{1,2,3},{8,9,4},{7,6,5}};
         int top = 0;
         int bottom = matrix.length - 1;
         int left = 0;

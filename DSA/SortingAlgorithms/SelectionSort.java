@@ -1,3 +1,5 @@
+package SortingAlgorithms;
+
 import java.util.Arrays;
 
 public class SelectionSort {
@@ -17,7 +19,9 @@ public class SelectionSort {
             int temp = arr[i];
             arr[i] = arr[min];
             arr[min] = temp;
+
             System.out.println();
+
             }
         System.out.println(Arrays.toString(arr));
         }

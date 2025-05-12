@@ -1,5 +1,6 @@
 package Mypack;
 class SubbuNotNormal{
+
     Accesspractise accesspractise = new Accesspractise();
     {
         System.out.println(accesspractise.privateClass);
@@ -9,6 +10,7 @@ class SubbuNotNormal{
 
 }
 public class Accesspractise {
+
     private static int i = 10;
     public static int j = 20;
     static int k = 30;
@@ -34,11 +36,15 @@ public class Accesspractise {
     PrivateClass privateClass = new PrivateClass();
     int var1 = new PrivateClass().privateInnerVar;
 
+
+
     public static void main(String[] args) {
 
         System.out.println(new Accesspractise());
         System.out.println(i);
         System.out.println(new Accesspractise().new PrivateClass().privateInnerVar);
+
+
 
 
 

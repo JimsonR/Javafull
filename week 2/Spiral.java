@@ -25,7 +25,7 @@ public class Spiral {
             bottom--;
         }
 
-            if (right <= left) {
+            if (right >= left) {
                 for (int i = bottom; i >= top; i--) {
 
                     result.add(matrix[i][left]);
@@ -39,9 +39,10 @@ public class Spiral {
 
     public static void main(String[] args) {
        int[][] matrix =
-               {{1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}};
+               {{1, 2, 3,5},
+                {4, 5, 6,7},
+                {7, 8, 9,8}
+               ,{4,5,3,2}};
        ArrayList<Integer> results = new ArrayList<>();
         System.out.println( newlistitems(matrix, 0, matrix.length-1,0,matrix[0].length-1,results));
 

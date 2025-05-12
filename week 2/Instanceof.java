@@ -13,7 +13,8 @@ public class Instanceof {
 
     public static void main(String[] args) {
         B b = new B();
+        A a = new A();
         b.m();
-        System.out.println(b instanceof A);
+        System.out.println(a instanceof B);
     }
 }

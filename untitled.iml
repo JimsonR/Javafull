@@ -15,6 +15,13 @@
       <sourceFolder url="file://$MODULE_DIR$/Week 7" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Week 8" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/week 9" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DesignPatters/CreationalPatterns" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DesignPatters/Structural Patterns" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DesignPatters/Behavioural Patterns" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DSA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/myDsa" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ThreadPractise" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/streams" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
